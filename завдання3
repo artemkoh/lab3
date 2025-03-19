@@ -1,0 +1,6 @@
+sentence = input("Введіть речення: ")
+
+# Замінюємо кожен символ його ASCII-кодом, розділяючи пробілами
+ascii_sentence = " ".join(str(ord(char)) for char in sentence)
+
+print(f"Речення в ASCII-кодах: {ascii_sentence}")
