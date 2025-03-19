@@ -1,0 +1,13 @@
+# Перевірка підміни літер "i, a, о" на латинські
+def has_cyrillic_to_latin_replacement(s):
+    replacements = {'і': 'i', 'а': 'a', 'о': 'o'}
+    for cyrillic, latin in replacements.items():
+        if cyrillic in s:
+            return True
+    return False
+
+# Введення слова користувачем
+word = input("Введіть слово: ")
+
+# Перевірка підміни літер
+print(f"19. Чи містить підміну літер на латинські: {has_cyrillic_to_latin_replacement(word)}")
